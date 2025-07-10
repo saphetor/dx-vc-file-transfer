@@ -50,3 +50,4 @@ jobs:
       if: always()
       with:
         files: pytest-report.xml
+        check_name: "Python Test Results"
