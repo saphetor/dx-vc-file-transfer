@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "dx-vc-file-transfer"
+version = "0.1.0"
+description = ""
+authors = ["Christos Kopanos <ckopanos@redmob.gr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.14"
+requests = "^2.32.0"
+
+[tool.poetry.scripts]
+dx_to_vclin_transfer = "dx_vc_file_transfer.cli.transfer_files:main"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^6.0.1"
+black = "^25.1.0"
+flake8 = "^7.3.0"
+pre-commit = "^4.2.0"
+pytest = "^8.4.1"
+pytest-cov = "^6.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.coverage.run]
+branch = true
+
+[tool.pytest.ini_options]
+minversion = "8.4"
+pythonpath = ". dx_vc_file_transfer"
+addopts = "-ra -q --cov=dx_vc_file_transfer --cov-config=pyproject.toml"
+testpaths = ["tests"]
