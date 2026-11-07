@@ -248,6 +248,6 @@ tomli==2.2.1 ; python_version >= "3.10" and python_full_version <= "3.11.0a6" \
 typing-extensions==4.14.1 ; python_version >= "3.10" and python_version < "3.11" \
     --hash=sha256:38b39f4aeeab64884ce9f74c94263ef78f3c22467c8724005483154c26648d36 \
     --hash=sha256:d1e1e3b58374dc93031d6eda2420a48ea44a36c2b4766a4fdeb3710755731d76
-virtualenv==20.31.2 ; python_version >= "3.10" and python_version < "3.14" \
-    --hash=sha256:36efd0d9650ee985f0cad72065001e66d49a6f24eb44d98980f630686243cf11 \
-    --hash=sha256:e10c0a9d02835e592521be48b332b6caee6887f332c111aa79a09b9e79efc2af
+virtualenv==21.14.13 ; python_version >= "3.10" and python_version < "3.14" \
+    --hash=sha256:5fbb04138a4861580b78ba9110d529a26bc48fcc93c8ec36bc0202eeed96a788 \
+    --hash=sha256:de5307ba4b9a0001d9c8ea02832d38f63ca432880f416c1bface61c4323fd905
